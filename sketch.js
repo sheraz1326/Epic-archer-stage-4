@@ -76,7 +76,7 @@ function keyPressed(){
     var posX = playerArcher.body.position.x;
     var posY = playerArcher.body.position.y;
     var angle = playerArcher.body.angle;
-    var arrow =new PlayerArcher(posX,posY,100,10,angle);
+    var arrow = new PlayerArrow(posX,posY,100,10,angle);
 
     Matter.Body.setAngle(arrow.body,angle);
     playerArrows.push(arrow);
